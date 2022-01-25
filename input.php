@@ -10,7 +10,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 	    if ($_POST['email'] === '') {
 		     $error['email'] = 'blank';
 	    }
-	    if (strlen($_POST['password']) < PWD_LENGTH) {
+	    if (strlen($_POST['password']) < PWD_LENGTH +1 ) {
 		     $error['password'] = 'length';
 	    }
 	    if ($_POST['password'] === '') {
