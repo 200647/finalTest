@@ -102,7 +102,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
 				    <p class="error">* パスワードを入力してください</p>
 			      <?php endif; ?>
 			      <?php if ($error['password'] === 'length'): ?>
-				    <p class="error">* パスワードは<?php echo PWD_LENGTH ?> 文字以上で入力してください</p>
+				    <p class="error">* パスワードは<?php echo PWD_LENGTH + 1 ?> 文字以上で入力してください</p>
 			      <?php endif; ?>
 		     </dd>
 		     <dt>写真など</dt>
